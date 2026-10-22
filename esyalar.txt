@@ -1,0 +1,79 @@
+# EŞYA LİSTESİ — "Eşya ekle" menüsünde görünenler
+#
+# Her satır bir eşya:   isim, en, boy, tür[, kategori]
+#   kategori yazılmazsa türüne göre seçilir (Yatak odası, Salon, Yemek & çalışma, Mutfak,
+#   Banyo, Aydınlatma, Dekor & bitki, Kapı & pencere, Diğer)
+#   en ve boy santimetre (küsurat için nokta kullan: 45.5)
+#   # ile başlayan satırlar ve boş satırlar dikkate alınmaz
+#   Hatalı bir satır olursa sadece o satır atlanır, uygulama çalışmaya devam eder.
+#
+# Kullanılabilen türler (çizim şekli):
+#   bed         yatak (yastıklar)          nightstand  komodin
+#   wardrobe    gardırop                   cabinet     dolap
+#   sofa        koltuk                     sofaL       L koltuk
+#   table       masa                       round       yuvarlak masa (70 cm ve altı alçak sehpa olur)
+#   desk        çalışma masası             chair       sandalye
+#   tv          TV ünitesi                 fridge      buzdolabı
+#   washer      çamaşır makinesi           rug         halı
+#   counter     mutfak tezgahı             stool       bar sandalyesi
+#   door        kapı                       slide       sürgülü kapı
+#   window      pencere                    opening     kapısız geçit (duvarda boşluk)
+#   stairs      merdiven (oku çıkış yönü)  fireplace   şömine
+#   stove       soba                       toilet      klozet
+#   basin       lavabo (aynalı)            shower      duşakabin
+#   lamp        lamba (30 cm ve altı masa lambası, büyüğü ayaklı lamba)
+#   sconce      duvar lambası (yükseklik = duvardaki yüksekliği)
+#   ceiling     avize (45 cm ve altı tavan lambası)      spot   gömme spot
+#   led         LED şerit                                 art    tablo
+#   shelf       kitaplık (derinlik 25 ve altı duvar rafı)
+#   plant       saksı çiçeği (30 cm ve altı küçük çiçek)
+#   curtain     perde
+#   bathtub     küvet                      box         düz kutu
+#
+# Örnek:  Kahve masası, 60, 60, round
+
+Tek kişilik yatak, 90, 200, bed
+Çift kişilik yatak, 160, 200, bed
+Komodin, 45, 40, nightstand
+Gardırop, 200, 60, wardrobe
+Dolap, 100, 60, cabinet
+Üçlü koltuk, 220, 90, sofa
+Tekli koltuk, 90, 90, sofa
+L koltuk, 250, 170, sofaL
+Yemek masası, 160, 90, table
+Yuvarlak masa, 100, 100, round
+Kahve masası, 30, 30, round
+Çalışma masası, 120, 60, desk
+Sandalye, 45, 45, chair
+TV ünitesi, 150, 40, tv
+Buzdolabı, 70, 70, fridge
+Çamaşır makinesi, 60, 60, washer
+Halı, 200, 140, rug
+Mutfak tezgahı, 180, 60, counter
+Bar sandalyesi, 40, 40, stool
+Kapı, 90, 10, door
+Sürgülü kapı, 180, 10, slide
+Pencere, 120, 10, window
+Kapısız geçit, 100, 10, opening
+Merdiven, 100, 300, stairs
+Şömine, 130, 60, fireplace
+Soba, 50, 50, stove
+Klozet, 40, 65, toilet
+Lavabo, 60, 45, basin
+Duşakabin, 90, 90, shower
+Küvet, 170, 75, bathtub
+Banyo dolabı, 60, 35, cabinet
+Ayaklı lamba, 40, 40, lamp
+Masa lambası, 25, 25, lamp
+Duvar lambası, 30, 15, sconce
+Avize, 80, 80, ceiling
+Tavan lambası, 40, 40, ceiling
+Spot lamba, 10, 10, spot
+LED şerit, 200, 5, led
+Tablo, 90, 4, art
+Kitaplık, 80, 30, shelf
+Duvar rafı, 80, 20, shelf
+Saksı çiçeği, 40, 40, plant
+Küçük çiçek, 20, 20, plant
+Perde, 160, 12, curtain
+Özel, 100, 100, box

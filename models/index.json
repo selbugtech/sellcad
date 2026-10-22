@@ -1,0 +1,557 @@
+{
+ "bed_2": {
+  "kind": "bed",
+  "w": 160,
+  "d": 200,
+  "h": 112,
+  "slice": [
+   22,
+   22,
+   0,
+   0,
+   45,
+   25
+  ],
+  "uniform": false
+ },
+ "sofa_3": {
+  "kind": "sofa",
+  "w": 220,
+  "d": 90,
+  "h": 82,
+  "slice": [
+   26,
+   26,
+   0,
+   0,
+   30,
+   10
+  ],
+  "uniform": false
+ },
+ "bed_1": {
+  "kind": "bed",
+  "w": 90,
+  "d": 200,
+  "h": 112,
+  "slice": [
+   20,
+   20,
+   0,
+   0,
+   45,
+   25
+  ],
+  "uniform": false
+ },
+ "nightstand": {
+  "kind": "nightstand",
+  "w": 45,
+  "d": 40,
+  "h": 51,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "wardrobe_2": {
+  "kind": "wardrobe",
+  "w": 100,
+  "d": 60,
+  "h": 210,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   8,
+   8
+  ],
+  "uniform": false
+ },
+ "wardrobe_3": {
+  "kind": "wardrobe",
+  "w": 150,
+  "d": 60,
+  "h": 210,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   8,
+   8
+  ],
+  "uniform": false
+ },
+ "wardrobe_4": {
+  "kind": "wardrobe",
+  "w": 200,
+  "d": 60,
+  "h": 210,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   8,
+   8
+  ],
+  "uniform": false
+ },
+ "cabinet_1": {
+  "kind": "cabinet",
+  "w": 50,
+  "d": 40,
+  "h": 90,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "cabinet_2": {
+  "kind": "cabinet",
+  "w": 100,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "cabinet_3": {
+  "kind": "cabinet",
+  "w": 150,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "sofa_1": {
+  "kind": "sofa",
+  "w": 90,
+  "d": 90,
+  "h": 82,
+  "slice": [
+   26,
+   26,
+   0,
+   0,
+   30,
+   10
+  ],
+  "uniform": false
+ },
+ "sofa_2": {
+  "kind": "sofa",
+  "w": 160,
+  "d": 90,
+  "h": 82,
+  "slice": [
+   26,
+   26,
+   0,
+   0,
+   30,
+   10
+  ],
+  "uniform": false
+ },
+ "sofaL": {
+  "kind": "sofaL",
+  "w": 250,
+  "d": 170,
+  "h": 82,
+  "slice": [
+   25,
+   95,
+   0,
+   0,
+   95,
+   10
+  ],
+  "uniform": false
+ },
+ "table": {
+  "kind": "table",
+  "w": 160,
+  "d": 90,
+  "h": 75,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   12,
+   12
+  ],
+  "uniform": false
+ },
+ "round_dining": {
+  "kind": "round",
+  "w": 100,
+  "d": 100,
+  "h": 75,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "round_coffee": {
+  "kind": "round",
+  "w": 70,
+  "d": 70,
+  "h": 46,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "desk": {
+  "kind": "desk",
+  "w": 120,
+  "d": 60,
+  "h": 74,
+  "slice": [
+   10,
+   46,
+   0,
+   0,
+   8,
+   8
+  ],
+  "uniform": false
+ },
+ "chair": {
+  "kind": "chair",
+  "w": 45,
+  "d": 45,
+  "h": 92,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "stool": {
+  "kind": "stool",
+  "w": 40,
+  "d": 40,
+  "h": 75,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "tv": {
+  "kind": "tv",
+  "w": 150,
+  "d": 40,
+  "h": 120,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "fridge": {
+  "kind": "fridge",
+  "w": 70,
+  "d": 70,
+  "h": 180,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "washer": {
+  "kind": "washer",
+  "w": 60,
+  "d": 60,
+  "h": 85,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "counter_1": {
+  "kind": "counter",
+  "w": 60,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   4
+  ],
+  "uniform": false
+ },
+ "counter_2": {
+  "kind": "counter",
+  "w": 120,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   4
+  ],
+  "uniform": false
+ },
+ "counter_3": {
+  "kind": "counter",
+  "w": 180,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   4
+  ],
+  "uniform": false
+ },
+ "counter_4": {
+  "kind": "counter",
+  "w": 240,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   4
+  ],
+  "uniform": false
+ },
+ "counter_5": {
+  "kind": "counter",
+  "w": 300,
+  "d": 60,
+  "h": 90,
+  "slice": [
+   4,
+   4,
+   0,
+   0,
+   4,
+   4
+  ],
+  "uniform": false
+ },
+ "fireplace": {
+  "kind": "fireplace",
+  "w": 130,
+  "d": 60,
+  "h": 240,
+  "slice": [
+   20,
+   20,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "stove": {
+  "kind": "stove",
+  "w": 50,
+  "d": 50,
+  "h": 230,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "toilet": {
+  "kind": "toilet",
+  "w": 40,
+  "d": 65,
+  "h": 81,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   10,
+   6
+  ],
+  "uniform": false
+ },
+ "basin": {
+  "kind": "basin",
+  "w": 60,
+  "d": 45,
+  "h": 175,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false
+ },
+ "shower": {
+  "kind": "shower",
+  "w": 90,
+  "d": 90,
+  "h": 210,
+  "slice": [
+   10,
+   10,
+   0,
+   0,
+   10,
+   10
+  ],
+  "uniform": false
+ },
+ "bathtub": {
+  "kind": "bathtub",
+  "w": 170,
+  "d": 75,
+  "h": 58,
+  "slice": [
+   20,
+   20,
+   0,
+   0,
+   10,
+   10
+  ],
+  "uniform": false
+ },
+ "shelf_book": {
+  "kind": "shelf",
+  "w": 80,
+  "d": 30,
+  "h": 180,
+  "slice": [
+   5,
+   5,
+   0,
+   0,
+   2,
+   2
+  ],
+  "uniform": false
+ },
+ "shelf_wall": {
+  "kind": "shelf",
+  "w": 80,
+  "d": 20,
+  "h": 165,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   2,
+   2
+  ],
+  "uniform": false
+ },
+ "plant_big": {
+  "kind": "plant",
+  "w": 40,
+  "d": 40,
+  "h": 120,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "plant_small": {
+  "kind": "plant",
+  "w": 20,
+  "d": 20,
+  "h": 35,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ }
+}

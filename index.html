@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="tr">
+<!-- © 2026 selbugtech. Tüm hakları saklıdır. İzinsiz kopyalanamaz, dağıtılamaz, değiştirilemez. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#212830">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Oda Planı">
+<title>Oda Planı</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" id="touchIcon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="bar">
+<div class="grp">
+<button class="tool" data-tool="room">✏ Kalem</button>
+<button class="tool" data-tool="select">Seç</button>
+<button class="tool" data-tool="wall">Duvar</button>
+<button class="tool" data-tool="measure">Ölç</button>
+</div>
+<div class="grp">
+<button class="tog" id="tGrid">Grid</button>
+<button class="tog" id="tSnap">Snap</button>
+<button class="tog" id="tOrtho">Dik</button>
+<button class="tog" id="tDim">Ölçü</button>
+<button class="tog" id="tCol">Çakışma</button>
+<button class="tog" id="tRooms">Oda</button>
+</div>
+<div class="grp" id="levels">
+<select id="floorSel"></select><button id="floorAdd">＋</button><button id="floorDel">✕</button>
+<select id="varSel"></select><button id="varAdd">＋</button><button id="varCmp">⇆</button><button id="varDel">✕</button>
+</div>
+<div class="grp">
+<button id="undo" title="Geri al (Ctrl+Z)">↶</button>
+<button id="redo" title="Yinele (Ctrl+Y)">↷</button>
+<button id="fit">Sığdır</button>
+<button id="b3d">3D</button>
+</div>
+<details id="fileMenu" class="grp">
+<summary>Dosya</summary>
+<div class="menu">
+<button id="fShare">🔗 Paylaş (link)</button>
+<button id="fSave">Kaydet (.json)</button>
+<button id="fLoad">Aç (.json)</button>
+<button id="fScan">📷 Kağıttan oda</button>
+<button id="fDxf">📐 DXF aç</button>
+<button id="fPng">PNG indir</button>
+<button id="fPdf">PDF indir</button>
+<button id="fA3">📄 A3 pafta (PDF)</button>
+<button id="fDxfOut">📐 DXF kaydet</button>
+<button id="fNew">Yeni plan</button>
+</div>
+</details>
+<details id="funMenu" class="grp">
+<summary>⚙ Ayarlar</summary>
+<div class="menu">
+<div class="mlabel">Tema</div>
+<button id="thDark" data-theme="dark">Normal</button>
+<button id="thBlue" data-theme="blue">📐 Blueprint</button>
+<button id="thSketch" data-theme="sketch">✏️ Eskiz</button>
+<div class="mlabel">Oda</div>
+<button id="fRandRoom">🎲 Rastgele oda</button>
+<button id="fFeng" hidden>☯ Feng shui: yatak analizi</button>
+</div>
+</details>
+<input type="file" id="fileIn" accept=".json,application/json" hidden>
+</header>
+<main id="stage">
+<canvas id="cv"></canvas>
+<aside id="cat" hidden>
+<div class="cat-head">
+<input id="catQ" type="search" placeholder="Ara" autocomplete="off">
+<button id="catClose">✕</button>
+</div>
+<div id="catTabs"></div>
+<div id="catList"></div>
+</aside>
+<div id="status"></div>
+<div id="toast"></div>
+</main>
+<section id="panel">
+<div class="sec" id="p-room" hidden>
+<div class="row">
+<label>Uzunluk (cm)</label>
+<input id="len" type="text" inputmode="decimal" placeholder="400" size="6">
+<button class="dir" data-dx="1" data-dy="0">→</button>
+<button class="dir" data-dx="0" data-dy="1">↓</button>
+<button class="dir" data-dx="-1" data-dy="0">←</button>
+<button class="dir" data-dx="0" data-dy="-1">↑</button>
+<button id="rClose">Kapat</button>
+<button id="wEnd">Duvarı bitir</button>
+<button id="rBack">Son noktayı sil</button>
+<button id="rDel" class="danger">Odayı sil</button>
+</div>
+<div class="row">
+<label>Son çizgi boyu (cm)</label>
+<input id="lastLen" type="text" inputmode="decimal" placeholder="-" size="7">
+</div>
+<div class="row">
+<button id="rAll" class="danger">Her şeyi sil</button>
+</div>
+</div>
+<div class="sec" id="p-select" hidden>
+<div class="row" id="addRow">
+<button id="catOpen" class="on">＋ Eşya</button>
+<button id="selAll">Tümünü seç</button>
+</div>
+<div class="row" id="roomEdit" hidden>
+<label>Oda</label>
+<input id="rmName" type="text" size="12">
+<span id="rmArea"></span>
+<label>Zemin</label>
+<select id="rmFloor"><option value="">—</option><option value="parke">Parke</option><option value="laminat">Laminat</option><option value="fayans">Fayans</option><option value="mermer">Mermer</option><option value="hali">Halı</option><option value="beton">Beton</option></select>
+<label>Duvar</label>
+<input id="rmWall" type="color" value="#e9e6e1"> <input id="rmWallHex" type="text" size="7" maxlength="9" spellcheck="false" autocomplete="off"> <button id="rmWallX">✕</button>
+<select id="rmType"></select>
+<button id="rmFurnish" class="on">🪄 Döşe</button>
+<button id="rmClear">Temizle</button>
+</div>
+<div class="row" id="itemEdit" hidden>
+<label>Seçili</label>
+<input id="en" type="text" size="10">
+<input id="ew" type="text" inputmode="decimal" size="4">
+<span>×</span>
+<input id="eh" type="text" inputmode="decimal" size="4">
+<input id="er" type="text" inputmode="decimal" size="3" title="Açı">
+<span>°</span>
+<button id="bedHelp" hidden>?</button>
+<span id="powWrap" hidden>☀ <input id="epow" type="range" min="0" max="300" step="10" value="100"> <span id="epowV">%100</span></span>
+<span id="hgWrap">↕ <input id="ehg" type="text" inputmode="decimal" size="3"> cm</span>
+</div>
+<div class="row" id="selBar" hidden>
+<label id="selCount"></label>
+<button id="rot">↻ 90°</button>
+<button id="flip" hidden>⇄ Ayna</button>
+<span id="colWrap">🎨 <input id="ecol" type="color" value="#888888"> <input id="ehex" type="text" size="7" maxlength="9" spellcheck="false" autocomplete="off"> <button id="ecolX">✕</button></span>
+<button id="dup">Kopyala</button>
+<button id="del" class="danger">Sil</button>
+<button id="selNone">Seçimi bırak</button>
+</div>
+</div>
+<div class="sec" id="p-wall" hidden>
+<div class="row">
+<label>Dış duvar <input id="wtExt" type="text" inputmode="decimal" size="3"> cm</label>
+<label>İç duvar <input id="wtInt" type="text" inputmode="decimal" size="3"> cm</label>
+<span id="wallInfo"></span>
+<button id="wallDel" class="danger" disabled>🗑 Duvarı sil</button>
+</div>
+</div>
+<div class="sec" id="p-measure" hidden>
+<div class="row">
+<button id="mClear" class="danger">Ölçüleri temizle</button>
+</div>
+</div>
+</section>
+<div id="scan" hidden>
+<div class="scan-bar">
+<button id="scClose">✕ Kapat</button>
+<button id="scPick">📷 Fotoğraf</button>
+<button id="scManual">Köşeleri elle işaretle</button>
+<button id="scApply" class="on" disabled>Odaya çevir</button>
+<span id="scStatus"></span>
+</div>
+<div class="scan-main"><canvas id="scCv"></canvas></div>
+<div class="scan-panel">
+<div class="row">
+<label>Birim</label>
+<button id="scCm" class="on">cm</button>
+<button id="scM">m</button>
+<canvas id="scPrev" width="150" height="100"></canvas>
+<span id="scArea"></span>
+</div>
+<div id="scEdges"></div>
+<div id="scWarn"></div>
+<input type="file" id="scFile" accept="image/*" hidden>
+</div>
+</div>
+<div id="dxf" hidden>
+<div class="scan-bar">
+<button id="dxClose">✕ Kapat</button>
+<button id="dxApply" class="on" disabled>Aktar</button>
+<span id="dxStatus"></span>
+</div>
+<div class="scan-main"><canvas id="dxCv"></canvas></div>
+<div class="scan-panel"><div id="dxLayers"></div></div>
+<input type="file" id="dxFile" accept=".dxf" hidden>
+</div>
+<div id="v3d" hidden>
+<div class="scan-bar">
+<button id="v3Close">✕ Kapat</button>
+<button id="v3Top">Üstten</button>
+<button id="v3Iso">Eğik</button>
+<button id="v3Shot">📸 Render</button>
+<button id="v3Pt">✨ Gerçek render</button>
+<button id="v3PtSave" hidden>💾</button>
+<select id="v3Views"></select><button id="v3ViewAdd">＋</button><button id="v3ViewDel" disabled>✕</button>
+<label>☀ <input id="v3Sun" type="range" min="5" max="21" step="0.25" value="14"> <span id="v3SunV">14:00</span></label>
+<label>Yön <input id="v3North" type="range" min="0" max="345" step="15" value="0"></label>
+<button id="v3Bot" hidden>🤖 Süpürge</button>
+<button id="v3Cat" hidden>🐱 Kedi</button>
+<label>Duvar <input id="v3H" type="text" inputmode="decimal" size="4" value="250"> cm</label>
+<label><input type="checkbox" id="v3Glass"> Saydam duvar</label>
+<span id="v3Status"></span>
+</div>
+<div class="scan-main"><canvas id="v3Cv"></canvas></div>
+</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/","three/examples/jsm/":"https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/","three-mesh-bvh":"https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.16/build/index.module.js","three-gpu-pathtracer":"https://cdn.jsdelivr.net/npm/three-gpu-pathtracer@0.0.27/build/index.module.js"}}</script>
+<script src="app.js"></script>
+<script src="scan.js"></script>
+<script src="dxf.js"></script>
+<script src="catalog.js"></script>
+<script src="furnish.js"></script>
+<div id="funDlg" hidden>
+<div class="box">
+<div id="funBody"></div>
+<button id="funClose" class="on">Tamam</button>
+</div>
+</div>
+<script src="view3d.js"></script>
+<script src="fun.js"></script>
+</body>
+</html>
