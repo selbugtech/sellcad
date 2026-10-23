@@ -12,7 +12,17 @@
    45,
    25
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "duvet",
+   "linen",
+   "main",
+   "main_dk",
+   "mattress",
+   "pillow",
+   "throw",
+   "wood_dk"
+  ]
  },
  "sofa_3": {
   "kind": "sofa",
@@ -27,7 +37,13 @@
    30,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "throw",
+   "wood_dk"
+  ]
  },
  "bed_1": {
   "kind": "bed",
@@ -42,7 +58,17 @@
    45,
    25
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "duvet",
+   "linen",
+   "main",
+   "main_dk",
+   "mattress",
+   "pillow",
+   "throw",
+   "wood_dk"
+  ]
  },
  "nightstand": {
   "kind": "nightstand",
@@ -57,7 +83,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "wood",
+   "wood_dk"
+  ]
  },
  "wardrobe_2": {
   "kind": "wardrobe",
@@ -72,7 +104,14 @@
    8,
    8
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "lacquer",
+   "main",
+   "metal",
+   "wood",
+   "wood_dk"
+  ]
  },
  "wardrobe_3": {
   "kind": "wardrobe",
@@ -87,7 +126,14 @@
    8,
    8
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "lacquer",
+   "main",
+   "metal",
+   "wood",
+   "wood_dk"
+  ]
  },
  "wardrobe_4": {
   "kind": "wardrobe",
@@ -102,7 +148,14 @@
    8,
    8
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "lacquer",
+   "main",
+   "metal",
+   "wood",
+   "wood_dk"
+  ]
  },
  "cabinet_1": {
   "kind": "cabinet",
@@ -117,7 +170,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "metal",
+   "wood"
+  ]
  },
  "cabinet_2": {
   "kind": "cabinet",
@@ -132,7 +191,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "metal",
+   "wood"
+  ]
  },
  "cabinet_3": {
   "kind": "cabinet",
@@ -147,7 +212,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "metal",
+   "wood"
+  ]
  },
  "sofa_1": {
   "kind": "sofa",
@@ -162,7 +233,12 @@
    30,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "wood_dk"
+  ]
  },
  "sofa_2": {
   "kind": "sofa",
@@ -177,7 +253,13 @@
    30,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "throw",
+   "wood_dk"
+  ]
  },
  "sofaL": {
   "kind": "sofaL",
@@ -192,7 +274,13 @@
    95,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "throw",
+   "wood_dk"
+  ]
  },
  "table": {
   "kind": "table",
@@ -207,7 +295,11 @@
    12,
    12
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "wood_dk"
+  ]
  },
  "round_dining": {
   "kind": "round",
@@ -222,7 +314,12 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "main",
+   "metal",
+   "wood_dk"
+  ]
  },
  "round_coffee": {
   "kind": "round",
@@ -237,7 +334,11 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "main",
+   "wood_dk"
+  ]
  },
  "desk": {
   "kind": "desk",
@@ -252,7 +353,12 @@
    8,
    8
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "metal",
+   "white"
+  ]
  },
  "chair": {
   "kind": "chair",
@@ -267,7 +373,12 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "wood",
+   "wood_dk"
+  ]
  },
  "stool": {
   "kind": "stool",
@@ -282,7 +393,11 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "main",
+   "metal"
+  ]
  },
  "tv": {
   "kind": "tv",
@@ -297,7 +412,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "metal",
+   "screen",
+   "wood"
+  ]
  },
  "fridge": {
   "kind": "fridge",
@@ -312,7 +433,11 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "steel"
+  ]
  },
  "washer": {
   "kind": "washer",
@@ -327,7 +452,15 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "dark",
+   "glass",
+   "main",
+   "screen",
+   "white"
+  ]
  },
  "counter_1": {
   "kind": "counter",
@@ -342,7 +475,14 @@
    4,
    4
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "counter_2": {
   "kind": "counter",
@@ -357,7 +497,14 @@
    4,
    4
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "counter_3": {
   "kind": "counter",
@@ -372,7 +519,14 @@
    4,
    4
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "counter_4": {
   "kind": "counter",
@@ -387,7 +541,14 @@
    4,
    4
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "counter_5": {
   "kind": "counter",
@@ -402,7 +563,14 @@
    4,
    4
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "fireplace": {
   "kind": "fireplace",
@@ -417,7 +585,13 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "dark",
+   "fire",
+   "main",
+   "wood_dk"
+  ]
  },
  "stove": {
   "kind": "stove",
@@ -432,7 +606,12 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "fire",
+   "main",
+   "metal"
+  ]
  },
  "toilet": {
   "kind": "toilet",
@@ -447,7 +626,12 @@
    10,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "main",
+   "white"
+  ]
  },
  "basin": {
   "kind": "basin",
@@ -462,7 +646,15 @@
    6,
    6
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "ceramic",
+   "chrome",
+   "main",
+   "metal",
+   "mirror",
+   "white"
+  ]
  },
  "shower": {
   "kind": "shower",
@@ -477,7 +669,12 @@
    10,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "glass",
+   "main"
+  ]
  },
  "bathtub": {
   "kind": "bathtub",
@@ -492,7 +689,11 @@
    10,
    10
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "main"
+  ]
  },
  "shelf_book": {
   "kind": "shelf",
@@ -507,7 +708,16 @@
    2,
    2
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "book1",
+   "book2",
+   "book3",
+   "book4",
+   "book5",
+   "main",
+   "wood_dk"
+  ]
  },
  "shelf_wall": {
   "kind": "shelf",
@@ -522,7 +732,15 @@
    2,
    2
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "book1",
+   "book2",
+   "book5",
+   "ceramic",
+   "main",
+   "metal"
+  ]
  },
  "plant_big": {
   "kind": "plant",
@@ -537,7 +755,13 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "main",
+   "plant",
+   "plant2",
+   "soil"
+  ]
  },
  "plant_small": {
   "kind": "plant",
@@ -552,7 +776,13 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "main",
+   "plant",
+   "plant2",
+   "soil"
+  ]
  },
  "lamp_floor": {
   "kind": "lamp",
@@ -567,7 +797,13 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "gold",
+   "metal",
+   "shade"
+  ]
  },
  "lamp_table": {
   "kind": "lamp",
@@ -582,7 +818,13 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "gold",
+   "main",
+   "shade"
+  ]
  },
  "sconce": {
   "kind": "sconce",
@@ -597,7 +839,12 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "gold",
+   "shade"
+  ]
  },
  "ceiling_flush": {
   "kind": "ceiling",
@@ -612,7 +859,11 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "white"
+  ]
  },
  "chandelier": {
   "kind": "ceiling",
@@ -627,7 +878,11 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "gold"
+  ]
  },
  "spot": {
   "kind": "spot",
@@ -642,7 +897,11 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "white"
+  ]
  },
  "curtain": {
   "kind": "curtain",
@@ -657,7 +916,11 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "metal"
+  ]
  },
  "rug": {
   "kind": "rug",
@@ -672,7 +935,12 @@
    16,
    16
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "linen",
+   "main",
+   "main_dk"
+  ]
  },
  "art": {
   "kind": "art",
@@ -687,7 +955,12 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "canvas",
+   "white",
+   "wood_dk"
+  ]
  },
  "door_frame": {
   "kind": "door",
@@ -702,7 +975,10 @@
    2.5,
    2.5
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "lacquer"
+  ]
  },
  "door_leaf": {
   "kind": "door",
@@ -717,7 +993,11 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main",
+   "steel"
+  ]
  },
  "window_1": {
   "kind": "window",
@@ -732,7 +1012,14 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "glass",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "window_2": {
   "kind": "window",
@@ -747,7 +1034,14 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "glass",
+   "main",
+   "steel",
+   "stone",
+   "white"
+  ]
  },
  "slide_door": {
   "kind": "slide",
@@ -762,7 +1056,12 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "glass",
+   "main",
+   "steel"
+  ]
  },
  "stair_tread": {
   "kind": "stairs",
@@ -777,7 +1076,10 @@
    0,
    0
   ],
-  "uniform": false
+  "uniform": false,
+  "roles": [
+   "main"
+  ]
  },
  "cat": {
   "kind": "cat",
@@ -792,7 +1094,14 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "book1",
+   "main",
+   "main_dk",
+   "screen",
+   "white"
+  ]
  },
  "robot": {
   "kind": "robot",
@@ -807,6 +1116,52 @@
    0,
    0
   ],
-  "uniform": true
+  "uniform": true,
+  "roles": [
+   "dark",
+   "main",
+   "rubber",
+   "white"
+  ]
+ },
+ "counter_sink": {
+  "kind": "counter",
+  "w": 70,
+  "d": 42,
+  "h": 30,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "metal",
+   "steel"
+  ]
+ },
+ "counter_hob": {
+  "kind": "counter",
+  "w": 60,
+  "d": 42,
+  "h": 1.2,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false,
+  "roles": [
+   "dark",
+   "screen",
+   "white"
+  ]
  }
 }
