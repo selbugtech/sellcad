@@ -26,6 +26,7 @@
 #   ceiling     avize (45 cm ve altı tavan lambası)      spot   gömme spot
 #   led         LED şerit                                 art    tablo
 #   camera      render kamerası (yükseklik = göz hizası)  cat    kedi     robot  robot süpürge
+#   platform    yükselti (yükseklik = üst kot)            mezz   asma kat (yükseklik = döşeme üstü)
 #   shelf       kitaplık (derinlik 25 ve altı duvar rafı)
 #   plant       saksı çiçeği (30 cm ve altı küçük çiçek)
 #   curtain     perde
@@ -75,6 +76,8 @@ Tablo, 90, 4, art
 Kamera, 30, 20, camera
 Kedi, 50, 20, cat
 Robot süpürge, 35, 35, robot
+Platform, 200, 150, platform
+Asma kat, 300, 200, mezz
 Kitaplık, 80, 30, shelf
 Duvar rafı, 80, 20, shelf
 Saksı çiçeği, 40, 40, plant
