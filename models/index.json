@@ -553,5 +553,260 @@
    0
   ],
   "uniform": true
+ },
+ "lamp_floor": {
+  "kind": "lamp",
+  "w": 40,
+  "d": 40,
+  "h": 165,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "lamp_table": {
+  "kind": "lamp",
+  "w": 25,
+  "d": 25,
+  "h": 45,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "sconce": {
+  "kind": "sconce",
+  "w": 30,
+  "d": 15,
+  "h": 26,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "ceiling_flush": {
+  "kind": "ceiling",
+  "w": 40,
+  "d": 40,
+  "h": 10,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "chandelier": {
+  "kind": "ceiling",
+  "w": 80,
+  "d": 80,
+  "h": 40,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "spot": {
+  "kind": "spot",
+  "w": 10,
+  "d": 10,
+  "h": 2,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "curtain": {
+  "kind": "curtain",
+  "w": 160,
+  "d": 12,
+  "h": 240,
+  "slice": [
+   52,
+   52,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "rug": {
+  "kind": "rug",
+  "w": 200,
+  "d": 140,
+  "h": 1.6,
+  "slice": [
+   16,
+   16,
+   0,
+   0,
+   16,
+   16
+  ],
+  "uniform": false
+ },
+ "art": {
+  "kind": "art",
+  "w": 90,
+  "d": 4,
+  "h": 67.5,
+  "slice": [
+   6,
+   6,
+   6,
+   6,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "door_frame": {
+  "kind": "door",
+  "w": 90,
+  "d": 20,
+  "h": 210,
+  "slice": [
+   9,
+   9,
+   0,
+   9,
+   2.5,
+   2.5
+  ],
+  "uniform": false
+ },
+ "door_leaf": {
+  "kind": "door",
+  "w": 88,
+  "d": 4,
+  "h": 203,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "window_1": {
+  "kind": "window",
+  "w": 80,
+  "d": 20,
+  "h": 120,
+  "slice": [
+   8,
+   8,
+   8,
+   8,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "window_2": {
+  "kind": "window",
+  "w": 120,
+  "d": 20,
+  "h": 120,
+  "slice": [
+   8,
+   8,
+   8,
+   8,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "slide_door": {
+  "kind": "slide",
+  "w": 180,
+  "d": 20,
+  "h": 210,
+  "slice": [
+   10,
+   10,
+   0,
+   8,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "stair_tread": {
+  "kind": "stairs",
+  "w": 100,
+  "d": 28,
+  "h": 4,
+  "slice": [
+   3,
+   3,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false
+ },
+ "cat": {
+  "kind": "cat",
+  "w": 50,
+  "d": 20,
+  "h": 34,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
+ },
+ "robot": {
+  "kind": "robot",
+  "w": 35,
+  "d": 35,
+  "h": 10,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true
  }
 }
