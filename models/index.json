@@ -1163,5 +1163,178 @@
    "screen",
    "white"
   ]
+ },
+ "plant_monstera": {
+  "kind": "plant",
+  "w": 70,
+  "d": 70,
+  "h": 100,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "main",
+   "plant",
+   "plant2",
+   "soil"
+  ]
+ },
+ "plant_snake": {
+  "kind": "plant",
+  "w": 32,
+  "d": 32,
+  "h": 85,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "main",
+   "plant",
+   "plant2",
+   "soil"
+  ]
+ },
+ "plant_olive": {
+  "kind": "plant",
+  "w": 50,
+  "d": 50,
+  "h": 155,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "main",
+   "plant",
+   "plant2",
+   "soil",
+   "wood_dk"
+  ]
+ },
+ "plant_orchid": {
+  "kind": "plant",
+  "w": 22,
+  "d": 22,
+  "h": 58,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "flower",
+   "flower2",
+   "main",
+   "plant",
+   "soil"
+  ]
+ },
+ "plant_lavender": {
+  "kind": "plant",
+  "w": 34,
+  "d": 18,
+  "h": 48,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "flower",
+   "main",
+   "plant",
+   "soil"
+  ]
+ },
+ "plant_tulip": {
+  "kind": "plant",
+  "w": 24,
+  "d": 24,
+  "h": 45,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "flower",
+   "main",
+   "plant",
+   "soil"
+  ]
+ },
+ "plant_cactus": {
+  "kind": "plant",
+  "w": 20,
+  "d": 20,
+  "h": 42,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "flower",
+   "flower2",
+   "main",
+   "plant",
+   "soil"
+  ]
+ },
+ "plant_peace": {
+  "kind": "plant",
+  "w": 40,
+  "d": 40,
+  "h": 62,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "flower",
+   "flower2",
+   "main",
+   "plant",
+   "plant2",
+   "soil"
+  ]
  }
 }
