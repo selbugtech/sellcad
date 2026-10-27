@@ -31,6 +31,9 @@
 #   plant       saksı çiçeği (30 cm ve altı küçük çiçek)
 #   curtain     perde
 #   bathtub     küvet                      box         düz kutu
+#   ac          klima (yükseklik = duvardaki alt kenar)     dishwasher  bulaşık makinesi
+#   oven        fırın (üstü ocaklı)        hallstand   portmanto (ayakkabılık + askı)
+#   pouf        puf
 #
 # Örnek:  Kahve masası, 60, 60, round
 
@@ -84,3 +87,8 @@ Saksı çiçeği, 40, 40, plant
 Küçük çiçek, 20, 20, plant
 Perde, 160, 12, curtain
 Özel, 100, 100, box
+Klima, 90, 25, ac
+Bulaşık makinesi, 60, 60, dishwasher
+Fırın, 60, 60, oven
+Portmanto, 100, 35, hallstand
+Puf, 50, 50, pouf

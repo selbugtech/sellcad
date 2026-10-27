@@ -1336,5 +1336,528 @@
    "plant2",
    "soil"
   ]
+ },
+ "sofa_chester": {
+  "kind": "sofa",
+  "w": 220,
+  "d": 92,
+  "h": 76,
+  "slice": [
+   36,
+   36,
+   0,
+   0,
+   30,
+   10
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "wood_dk"
+  ]
+ },
+ "sofa_round": {
+  "kind": "sofa",
+  "w": 220,
+  "d": 95,
+  "h": 74,
+  "slice": [
+   44,
+   44,
+   0,
+   0,
+   34,
+   10
+  ],
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "main_dk"
+  ]
+ },
+ "chair_wood": {
+  "kind": "chair",
+  "w": 45,
+  "d": 45,
+  "h": 90,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "main"
+  ]
+ },
+ "chair_uphol": {
+  "kind": "chair",
+  "w": 48,
+  "d": 52,
+  "h": 95,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   8,
+   8
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "wood_dk"
+  ]
+ },
+ "chair_metal": {
+  "kind": "chair",
+  "w": 44,
+  "d": 46,
+  "h": 86,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "metal"
+  ]
+ },
+ "chair_office": {
+  "kind": "chair",
+  "w": 62,
+  "d": 62,
+  "h": 105,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "chrome",
+   "main",
+   "metal",
+   "rubber"
+  ]
+ },
+ "bed_wood": {
+  "kind": "bed",
+  "w": 160,
+  "d": 200,
+  "h": 100,
+  "slice": [
+   22,
+   22,
+   0,
+   0,
+   45,
+   25
+  ],
+  "uniform": false,
+  "roles": [
+   "duvet",
+   "linen",
+   "mattress",
+   "pillow",
+   "throw",
+   "wood",
+   "wood_dk"
+  ]
+ },
+ "bed_metal": {
+  "kind": "bed",
+  "w": 160,
+  "d": 200,
+  "h": 110,
+  "slice": [
+   24,
+   24,
+   0,
+   0,
+   45,
+   25
+  ],
+  "uniform": false,
+  "roles": [
+   "duvet",
+   "linen",
+   "main",
+   "mattress",
+   "metal",
+   "pillow",
+   "throw",
+   "wood_dk"
+  ]
+ },
+ "nightstand_leg": {
+  "kind": "nightstand",
+  "w": 48,
+  "d": 38,
+  "h": 52,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "wood"
+  ]
+ },
+ "nightstand_open": {
+  "kind": "nightstand",
+  "w": 45,
+  "d": 40,
+  "h": 50,
+  "slice": [
+   8,
+   8,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "metal",
+   "white"
+  ]
+ },
+ "rug_kilim": {
+  "kind": "rug",
+  "w": 200,
+  "d": 140,
+  "h": 1.6,
+  "slice": [
+   16,
+   16,
+   0,
+   0,
+   16,
+   16
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "main_dk",
+   "throw"
+  ]
+ },
+ "rug_round": {
+  "kind": "rug",
+  "w": 160,
+  "d": 160,
+  "h": 1.6,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "main",
+   "main_dk"
+  ]
+ },
+ "rug_shag": {
+  "kind": "rug",
+  "w": 200,
+  "d": 140,
+  "h": 3.5,
+  "slice": [
+   16,
+   16,
+   0,
+   0,
+   16,
+   16
+  ],
+  "uniform": false,
+  "roles": [
+   "main"
+  ]
+ },
+ "curtain_tulle": {
+  "kind": "curtain",
+  "w": 160,
+  "d": 12,
+  "h": 240,
+  "slice": [
+   10,
+   10,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false,
+  "roles": [
+   "metal",
+   "sheer"
+  ]
+ },
+ "curtain_blind": {
+  "kind": "curtain",
+  "w": 160,
+  "d": 12,
+  "h": 240,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false,
+  "roles": [
+   "main",
+   "white"
+  ]
+ },
+ "lamp_arc": {
+  "kind": "lamp",
+  "w": 130,
+  "d": 40,
+  "h": 190,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "chrome",
+   "shade",
+   "stone"
+  ]
+ },
+ "lamp_tripod": {
+  "kind": "lamp",
+  "w": 55,
+  "d": 55,
+  "h": 160,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "metal",
+   "shade",
+   "wood"
+  ]
+ },
+ "lamp_paper": {
+  "kind": "lamp",
+  "w": 45,
+  "d": 45,
+  "h": 150,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "bulb",
+   "metal",
+   "shade",
+   "white"
+  ]
+ },
+ "table_marble": {
+  "kind": "table",
+  "w": 160,
+  "d": 90,
+  "h": 75,
+  "slice": [
+   24,
+   24,
+   0,
+   0,
+   14,
+   14
+  ],
+  "uniform": false,
+  "roles": [
+   "metal",
+   "stone"
+  ]
+ },
+ "table_wood": {
+  "kind": "table",
+  "w": 180,
+  "d": 90,
+  "h": 76,
+  "slice": [
+   16,
+   16,
+   0,
+   0,
+   12,
+   12
+  ],
+  "uniform": false,
+  "roles": [
+   "main"
+  ]
+ },
+ "table_glass": {
+  "kind": "table",
+  "w": 160,
+  "d": 90,
+  "h": 75,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   12,
+   12
+  ],
+  "uniform": false,
+  "roles": [
+   "glass",
+   "metal"
+  ]
+ },
+ "ac": {
+  "kind": "ac",
+  "w": 90,
+  "d": 25,
+  "h": 30,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false,
+  "roles": [
+   "dark",
+   "screen",
+   "white"
+  ]
+ },
+ "dishwasher": {
+  "kind": "dishwasher",
+  "w": 60,
+  "d": 60,
+  "h": 85,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "main",
+   "screen",
+   "steel",
+   "white"
+  ]
+ },
+ "oven": {
+  "kind": "oven",
+  "w": 60,
+  "d": 60,
+  "h": 86,
+  "slice": [
+   6,
+   6,
+   0,
+   0,
+   6,
+   6
+  ],
+  "uniform": false,
+  "roles": [
+   "chrome",
+   "dark",
+   "main",
+   "screen"
+  ]
+ },
+ "hallstand": {
+  "kind": "hallstand",
+  "w": 100,
+  "d": 35,
+  "h": 190,
+  "slice": [
+   12,
+   12,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": false,
+  "roles": [
+   "gold",
+   "main",
+   "wood",
+   "wood_dk"
+  ]
+ },
+ "pouf": {
+  "kind": "pouf",
+  "w": 50,
+  "d": 50,
+  "h": 42,
+  "slice": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "uniform": true,
+  "roles": [
+   "main",
+   "main_dk"
+  ]
  }
 }
